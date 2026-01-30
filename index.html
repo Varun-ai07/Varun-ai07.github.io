@@ -13,8 +13,7 @@
     <meta property="og:url" content="https://varun-ai07.github.io/">
     <meta property="og:title" content="Varun P - AI Architect & Quantum Computing Researcher">
     <meta property="og:description" content="Building next-generation intelligent systems at the intersection of AI, Quantum Computing, and Blockchain Technology.">
-    <meta property="og:image" content="https://avatars.githubusercontent.com/u/Varun-ai07">
-
+    
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://varun-ai07.github.io/">
@@ -24,7 +23,7 @@
     <!-- Google Site Verification - ADD YOUR VERIFICATION CODE HERE -->
     <meta name="google-site-verification" content="-YjMtYwwCmzr4PONWyz3oE7IQ9Bpt1jmS-bL_q8m26k" />
     
-    <title>Varun P - AI Architect & Quantum Computing Researcher | Portfolio</title>
+    <title>VARUN P - AI Architect & Quantum Computing Researcher</title>
     
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
@@ -56,8 +55,20 @@
     }
     </script>
     
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+        :root {
+            --deep-teal: #004E64;
+            --mist-gray: #E0E5E9;
+            --navy: #0A2540;
+            --powder-blue: #C7DDEB;
+            --accent: #00A8E8;
+        }
         
         * {
             margin: 0;
@@ -65,231 +76,331 @@
             box-sizing: border-box;
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+        
         body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #544349 0%, #3a2f33 50%, #544349 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #F3E7D9;
-            padding: 20px;
-            position: relative;
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--navy);
+            color: var(--mist-gray);
             overflow-x: hidden;
         }
         
-        /* Animated background elements */
-        body::before {
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 37, 64, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 5%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(199, 221, 235, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--powder-blue);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--mist-gray);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--powder-blue);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 5% 4rem;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--deep-teal) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 168, 232, 0.1) 0%, transparent 70%);
+            top: -300px;
+            right: -300px;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        .hero::after {
             content: '';
             position: absolute;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(243, 231, 217, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            top: -250px;
+            background: radial-gradient(circle, rgba(199, 221, 235, 0.05) 0%, transparent 70%);
+            bottom: -250px;
             left: -250px;
-            animation: float 20s infinite ease-in-out;
-        }
-        
-        body::after {
-            content: '';
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(243, 231, 217, 0.08) 0%, transparent 70%);
-            border-radius: 50%;
-            bottom: -200px;
-            right: -200px;
             animation: float 15s infinite ease-in-out reverse;
         }
         
         @keyframes float {
-            0%, 100% {
-                transform: translate(0, 0) scale(1);
-            }
-            50% {
-                transform: translate(50px, 50px) scale(1.1);
-            }
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(50px, 50px) rotate(180deg); }
         }
         
-        .container {
-            background: rgba(243, 231, 217, 0.05);
-            backdrop-filter: blur(20px);
-            border-radius: 30px;
-            padding: 70px 50px;
-            max-width: 1000px;
-            text-align: center;
-            box-shadow: 
-                0 20px 60px rgba(0, 0, 0, 0.4),
-                inset 0 1px 0 rgba(243, 231, 217, 0.2);
-            border: 2px solid rgba(243, 231, 217, 0.15);
-            animation: fadeIn 1.2s ease-in;
+        .hero-content {
+            max-width: 1400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
             position: relative;
             z-index: 1;
         }
         
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 5em;
-            margin-bottom: 15px;
-            font-weight: 900;
-            letter-spacing: 8px;
-            background: linear-gradient(135deg, #F3E7D9 0%, #d4c4b4 100%);
+        .hero-text h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--powder-blue) 0%, var(--mist-gray) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 4px 20px rgba(243, 231, 217, 0.3);
-            animation: glow 3s ease-in-out infinite alternate;
+            line-height: 1.2;
         }
         
-        @keyframes glow {
-            from {
-                filter: drop-shadow(0 0 10px rgba(243, 231, 217, 0.3));
-            }
-            to {
-                filter: drop-shadow(0 0 20px rgba(243, 231, 217, 0.5));
-            }
+        .hero-text .tagline {
+            font-size: 1.5rem;
+            color: var(--powder-blue);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+            font-family: 'JetBrains Mono', monospace;
         }
         
-        .subtitle {
-            font-family: 'Space Mono', monospace;
-            font-size: 1.3em;
-            margin-bottom: 40px;
-            color: #d4c4b4;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        .hero-text p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--mist-gray);
+            margin-bottom: 3rem;
+            max-width: 600px;
         }
         
-        .description {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.2em;
-            line-height: 2;
-            margin-bottom: 50px;
-            color: #F3E7D9;
-            max-width: 750px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 300;
-        }
-        
-        .links {
+        .cta-buttons {
             display: flex;
-            gap: 25px;
-            justify-content: center;
+            gap: 1.5rem;
             flex-wrap: wrap;
-            margin-bottom: 60px;
         }
         
         .btn {
-            padding: 18px 40px;
-            background: linear-gradient(135deg, #F3E7D9 0%, #d4c4b4 100%);
-            color: #544349;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1em;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 
-                0 6px 20px rgba(243, 231, 217, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.4);
             display: inline-flex;
             align-items: center;
-            gap: 12px;
-            letter-spacing: 1px;
-            border: 2px solid transparent;
-            font-family: 'Montserrat', sans-serif;
+            gap: 0.8rem;
+            font-family: 'Space Grotesk', sans-serif;
         }
         
-        .btn:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 
-                0 10px 30px rgba(243, 231, 217, 0.5),
-                inset 0 1px 0 rgba(255, 255, 255, 0.6);
-            background: linear-gradient(135deg, #ffffff 0%, #F3E7D9 100%);
-            border-color: rgba(243, 231, 217, 0.5);
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 4px 20px rgba(0, 168, 232, 0.3);
         }
         
-        .skills {
-            margin-top: 60px;
-            display: flex;
-            gap: 18px;
-            justify-content: center;
-            flex-wrap: wrap;
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(0, 168, 232, 0.5);
         }
         
-        .skill-tag {
-            background: rgba(243, 231, 217, 0.12);
-            padding: 14px 28px;
-            border-radius: 25px;
-            font-size: 1.05em;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            cursor: default;
-            border: 1px solid rgba(243, 231, 217, 0.2);
-            font-family: 'Montserrat', sans-serif;
-            letter-spacing: 0.5px;
+        .btn-secondary {
+            background: transparent;
+            color: var(--powder-blue);
+            border: 2px solid var(--powder-blue);
         }
         
-        .skill-tag:hover {
-            background: rgba(243, 231, 217, 0.2);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(243, 231, 217, 0.2);
-            border-color: rgba(243, 231, 217, 0.4);
+        .btn-secondary:hover {
+            background: var(--powder-blue);
+            color: var(--navy);
         }
         
-        .highlight {
-            color: #F3E7D9;
-            font-weight: 600;
-            background: linear-gradient(135deg, #F3E7D9 0%, #ffffff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .hero-visual {
+            position: relative;
         }
         
-        .projects-section {
-            margin-top: 70px;
-            padding-top: 40px;
-            border-top: 2px solid rgba(243, 231, 217, 0.2);
+        .code-block {
+            background: rgba(0, 78, 100, 0.3);
+            border: 1px solid rgba(199, 221, 235, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: var(--powder-blue);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
         }
         
-        .projects-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.8em;
-            margin-bottom: 30px;
+        .code-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent) 0%, var(--powder-blue) 100%);
+        }
+        
+        .code-line {
+            margin: 0.5rem 0;
+        }
+        
+        .keyword { color: #FF6B9D; }
+        .function { color: #4ECDC4; }
+        .string { color: #FFE66D; }
+        .comment { color: #95A5A6; font-style: italic; }
+        
+        /* About Section */
+        .about {
+            padding: 6rem 5%;
+            background: var(--deep-teal);
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--powder-blue);
             font-weight: 700;
-            background: linear-gradient(135deg, #F3E7D9 0%, #d4c4b4 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
             letter-spacing: 2px;
         }
         
-        .project-cards {
+        .section-subtitle {
+            text-align: center;
+            color: var(--mist-gray);
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+            opacity: 0.8;
+        }
+        
+        .about-content {
+            max-width: 1400px;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: var(--mist-gray);
+            margin-bottom: 1.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .skill-card {
+            background: rgba(10, 37, 64, 0.4);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(199, 221, 235, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 8px 24px rgba(0, 168, 232, 0.2);
+        }
+        
+        .skill-card i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        
+        .skill-card h3 {
+            font-size: 1.2rem;
+            color: var(--powder-blue);
+            margin-bottom: 0.5rem;
+        }
+        
+        .skill-card p {
+            font-size: 0.95rem;
+            color: var(--mist-gray);
+            opacity: 0.8;
+        }
+        
+        /* Projects Section */
+        .projects {
+            padding: 6rem 5%;
+            background: var(--navy);
+        }
+        
+        .projects-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
         }
         
         .project-card {
-            background: rgba(243, 231, 217, 0.08);
-            padding: 30px;
-            border-radius: 20px;
-            text-align: left;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            border: 2px solid rgba(243, 231, 217, 0.15);
+            background: rgba(0, 78, 100, 0.2);
+            border: 1px solid rgba(199, 221, 235, 0.1);
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
             position: relative;
             overflow: hidden;
         }
@@ -300,179 +411,428 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(243, 231, 217, 0.1) 0%, transparent 100%);
-            opacity: 0;
-            transition: opacity 0.4s ease;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent) 0%, var(--powder-blue) 100%);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
         }
         
         .project-card:hover::before {
-            opacity: 1;
+            transform: scaleX(1);
         }
         
         .project-card:hover {
-            transform: translateY(-8px);
-            background: rgba(243, 231, 217, 0.15);
-            box-shadow: 0 12px 35px rgba(243, 231, 217, 0.25);
-            border-color: rgba(243, 231, 217, 0.4);
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(0, 168, 232, 0.3);
+            border-color: var(--accent);
+        }
+        
+        .project-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
         }
         
         .project-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6em;
-            margin-bottom: 12px;
-            color: #F3E7D9;
-            font-weight: 700;
-            position: relative;
-            z-index: 1;
+            font-size: 1.8rem;
+            color: var(--powder-blue);
+            margin-bottom: 1rem;
         }
         
         .project-card p {
-            font-size: 1em;
+            font-size: 1rem;
             line-height: 1.8;
-            color: #d4c4b4;
-            font-weight: 300;
-            position: relative;
-            z-index: 1;
+            color: var(--mist-gray);
+            margin-bottom: 1.5rem;
         }
         
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+        
+        .tech-tag {
+            background: rgba(0, 168, 232, 0.1);
+            color: var(--powder-blue);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(199, 221, 235, 0.2);
+        }
+        
+        .project-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 168, 232, 0.15);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            margin-top: 1rem;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 6rem 5%;
+            background: var(--deep-teal);
+        }
+        
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 2.5rem;
+            background: rgba(10, 37, 64, 0.4);
+            border: 1px solid rgba(199, 221, 235, 0.2);
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--mist-gray);
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+        
+        .contact-link i {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+        
+        .contact-link:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 8px 24px rgba(0, 168, 232, 0.3);
+        }
+        
+        /* Footer */
         footer {
-            margin-top: 70px;
-            padding-top: 40px;
-            border-top: 2px solid rgba(243, 231, 217, 0.2);
-            font-size: 1em;
-            color: #d4c4b4;
-            font-weight: 300;
+            padding: 3rem 5%;
+            background: var(--navy);
+            text-align: center;
+            border-top: 1px solid rgba(199, 221, 235, 0.1);
         }
         
         footer p {
-            margin: 8px 0;
+            color: var(--mist-gray);
+            opacity: 0.7;
         }
         
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 3em;
-                letter-spacing: 4px;
+        /* Responsive */
+        @media (max-width: 968px) {
+            .nav-links {
+                display: none;
             }
             
-            .subtitle {
-                font-size: 1em;
-                letter-spacing: 1px;
+            .hero-content,
+            .about-content {
+                grid-template-columns: 1fr;
             }
             
-            .description {
-                font-size: 1em;
-                line-height: 1.7;
+            .hero-text h1 {
+                font-size: 3rem;
             }
             
-            .container {
-                padding: 50px 30px;
+            .section-title {
+                font-size: 2rem;
             }
             
-            .links {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 320px;
-                justify-content: center;
-            }
-            
-            .projects-title {
-                font-size: 2em;
-            }
-            
-            .project-cards {
+            .projects-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>VARUN P</h1>
-        <div class="subtitle">AI Architect | Quantum Computing | Web3 Innovator</div>
-        
-        <div class="description">
-            Building <span class="highlight">next-generation intelligent systems</span> at the intersection of 
-            <strong>Artificial Intelligence</strong>, <strong>Quantum Computing</strong>, 
-            and <strong>Blockchain Technology</strong>.
-            <br><br>
-            B.Tech AI & Data Science @ Anna University, Chennai, India
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">VARUN P</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        
-        <div class="links">
-            <a href="https://github.com/Varun-ai07" class="btn" target="_blank" rel="noopener noreferrer">
-                📂 GitHub Portfolio
-            </a>
-            <a href="https://linkedin.com/in/jp-varun" class="btn" target="_blank" rel="noopener noreferrer">
-                💼 LinkedIn
-            </a>
-            <a href="mailto:jp.vxrun@gmail.com" class="btn">
-                📧 Contact Me
-            </a>
-        </div>
-        
-        <div class="skills">
-            <span class="skill-tag">🧠 Deep Learning</span>
-            <span class="skill-tag">⚛️ Quantum Computing</span>
-            <span class="skill-tag">🔗 Blockchain</span>
-            <span class="skill-tag">🤖 Agentic AI</span>
-            <span class="skill-tag">🛡️ Cybersecurity</span>
-            <span class="skill-tag">⚡ Full Stack</span>
-            <span class="skill-tag">🔬 Research</span>
-        </div>
-        
-        <div class="projects-section">
-            <div class="projects-title">🔥 Featured Projects</div>
-            
-            <div class="project-cards">
-                <div class="project-card">
-                    <h3>🏥 Medical Consent AI</h3>
-                    <p>AI-explained medical consent platform with blockchain verification. Making healthcare documents understandable.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>VARUN P</h1>
+                <p class="tagline">AI Architect • Quantum Computing • Web3</p>
+                <p>Building next-generation intelligent systems at the intersection of Artificial Intelligence, Quantum Computing, and Blockchain Technology.</p>
+                <p>B.Tech AI & Data Science @ Anna University, Chennai</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get in Touch
+                    </a>
                 </div>
-                
-                <div class="project-card">
-                    <h3>⚛️ QuantaBO</h3>
-                    <p>Quantum circuit optimization using Graph Neural Networks and Bayesian optimization techniques.</p>
-                </div>
-                
-                <div class="project-card">
-                    <h3>🧠 Brain Tumor AI</h3>
-                    <p>Hybrid CNN + Vision Transformer for MRI-based tumor detection with clinical-grade accuracy.</p>
-                </div>
-                
-                <div class="project-card">
-                    <h3>🛡️ Quasar Security AI</h3>
-                    <p>Multi-agent RAG system for universal cybersecurity documentation and threat intelligence.</p>
-                </div>
-                
-                <div class="project-card">
-                    <h3>🌤️ WeatherGuard AI</h3>
-                    <p>AI-powered disaster response system with real-time weather monitoring and predictive analytics.</p>
-                </div>
-                
-                <div class="project-card">
-                    <h3>🤖 AI Agent Suite</h3>
-                    <p>Collection of voice, telegram, and documentation AI agents powered by LLMs and RAG systems.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-line"><span class="keyword">class</span> <span class="function">AIArchitect</span>:</div>
+                    <div class="code-line">    <span class="keyword">def</span> <span class="function">__init__</span>(self):</div>
+                    <div class="code-line">        self.name = <span class="string">"VARUN P"</span></div>
+                    <div class="code-line">        self.expertise = [</div>
+                    <div class="code-line">            <span class="string">"Agentic AI"</span>,</div>
+                    <div class="code-line">            <span class="string">"Quantum Computing"</span>,</div>
+                    <div class="code-line">            <span class="string">"Blockchain"</span></div>
+                    <div class="code-line">        ]</div>
+                    <div class="code-line">        self.mission = <span class="string">"Transform research into impact"</span></div>
+                    <div class="code-line"></div>
+                    <div class="code-line">    <span class="keyword">def</span> <span class="function">build_future</span>(self):</div>
+                    <div class="code-line">        <span class="keyword">return</span> <span class="string">"Production-grade innovation"</span></div>
                 </div>
             </div>
         </div>
-        
-        <footer>
-            <p>© 2026 Varun P. Built with 💜 for the future of AI.</p>
-            <p style="margin-top: 10px; font-size: 0.85em;">
-                AI Architect • Quantum Researcher • Web3 Developer • Open Source Contributor
-            </p>
-        </footer>
-    </div>
-    
-    <!-- Simple Analytics (Optional - No tracking by default) -->
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">EXPERTISE</h2>
+        <p class="section-subtitle">Specializing in cutting-edge technologies</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I architect intelligent systems that bridge theoretical research and production deployment. My work spans from optimizing quantum circuits with graph neural networks to building AI-powered medical consent platforms.</p>
+                <p>With a focus on agentic AI, quantum computing, and blockchain technology, I create solutions that push the boundaries of what's possible while maintaining production-grade reliability.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Deep Learning, LLMs, RAG, Computer Vision, NLP</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-atom"></i>
+                    <h3>Quantum Computing</h3>
+                    <p>Circuit Optimization, GNNs, Bayesian Methods</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-link"></i>
+                    <h3>Blockchain & Web3</h3>
+                    <p>Smart Contracts, DApps, Solidity, Ethereum</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>AI Security, Multi-Agent Systems, Automation</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Agentic Systems</h3>
+                    <p>Autonomous AI, Tool Integration, Workflows</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Full Stack</h3>
+                    <p>React, Node.js, FastAPI, Python, TensorFlow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">FEATURED PROJECTS</h2>
+        <p class="section-subtitle">Production-grade intelligent systems</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <i class="fas fa-hospital-user project-icon"></i>
+                <h3>Medical Consent AI</h3>
+                <p>AI-powered medical consent platform that explains complex procedures in plain language with blockchain verification and doctor approval workflows.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">LLMs</span>
+                    <span class="tech-tag">Solidity</span>
+                </div>
+                <div class="project-status">
+                    <span class="status-dot"></span>
+                    Private Repository
+                </div>
+            </div>
+
+            <div class="project-card">
+                <i class="fas fa-project-diagram project-icon"></i>
+                <h3>QuantaBO</h3>
+                <p>Quantum circuit optimization using Graph Neural Networks and Bayesian optimization for improved performance on real quantum hardware.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Qiskit</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">GNN</span>
+                    <span class="tech-tag">Bayesian</span>
+                </div>
+                <div class="project-status">
+                    <span class="status-dot"></span>
+                    Active Development
+                </div>
+            </div>
+
+            <div class="project-card">
+                <i class="fas fa-brain project-icon"></i>
+                <h3>Brain Tumor Detection</h3>
+                <p>Hybrid CNN + Vision Transformer architecture for MRI-based tumor classification with clinical-grade accuracy.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">ViT</span>
+                    <span class="tech-tag">CNN</span>
+                    <span class="tech-tag">Medical AI</span>
+                </div>
+                <div class="project-status">
+                    <span class="status-dot"></span>
+                    Research Phase
+                </div>
+            </div>
+
+            <div class="project-card">
+                <i class="fas fa-shield-alt project-icon"></i>
+                <h3>Quasar Security AI</h3>
+                <p>Universal cybersecurity assistant with RAG-powered documentation analysis across 50+ security tools and multi-agent workflows.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">RAG</span>
+                    <span class="tech-tag">Multi-Agent</span>
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">Security</span>
+                </div>
+                <div class="project-status">
+                    <span class="status-dot"></span>
+                    Private Repository
+                </div>
+            </div>
+
+            <div class="project-card">
+                <i class="fas fa-cloud-sun-rain project-icon"></i>
+                <h3>WeatherGuard AI</h3>
+                <p>AI-powered disaster response system with real-time weather monitoring, predictive analytics, and automated alerts.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">ML</span>
+                    <span class="tech-tag">APIs</span>
+                    <span class="tech-tag">Analytics</span>
+                </div>
+                <div class="project-status">
+                    <span class="status-dot"></span>
+                    Production
+                </div>
+            </div>
+
+            <div class="project-card">
+                <i class="fas fa-robot project-icon"></i>
+                <h3>AI Agent Suite</h3>
+                <p>Collection of intelligent agents including voice AI, Telegram bot, and documentation crawlers powered by LLMs and RAG systems.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">LLMs</span>
+                    <span class="tech-tag">RAG</span>
+                    <span class="tech-tag">Voice AI</span>
+                    <span class="tech-tag">Agents</span>
+                </div>
+                <div class="project-status">
+                    <span class="status-dot"></span>
+                    Multiple Repos
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2 class="section-title">LET'S CONNECT</h2>
+            <p class="section-subtitle">Open to collaborations, research opportunities, and building the future</p>
+            <div class="contact-links">
+                <a href="https://github.com/Varun-ai07" class="contact-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/jp-varun" class="contact-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="mailto:jp.vxrun@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 VARUN P. AI Architect • Quantum Researcher • Web3 Developer</p>
+        <p style="margin-top: 1rem; opacity: 0.6;">Built with precision for the future of intelligent systems</p>
+    </footer>
+
     <script>
-        // Add your analytics code here if needed
-        console.log('Welcome to Varun P\'s Portfolio! 🚀');
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .skill-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>

@@ -3,16 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Varun P - AI Architect, Quantum Computing Researcher, and Web3 Developer from Chennai, India">
-    <meta name="keywords" content="Varun P, AI Architect, Quantum Computing, Web3, Blockchain, Chennai, Anna University">
+    <meta name="description" content="Varun P - AI Architect, Quantum Computing Researcher, and Web3 Developer from Chennai, India. Building next-generation intelligent systems with AI, Quantum Computing, and Blockchain.">
+    <meta name="keywords" content="Varun P, Varun-ai07, AI Architect, Quantum Computing, Web3, Blockchain, Machine Learning, Deep Learning, Chennai, Anna University, Artificial Intelligence, Cybersecurity, Agentic AI">
     <meta name="author" content="Varun P">
+    <meta name="robots" content="index, follow">
     
-    <!-- THIS IS WHERE YOU'LL ADD THE GOOGLE VERIFICATION TAG LATER -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://varun-ai07.github.io/">
+    <meta property="og:title" content="Varun P - AI Architect & Quantum Computing Researcher">
+    <meta property="og:description" content="Building next-generation intelligent systems at the intersection of AI, Quantum Computing, and Blockchain Technology.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/Varun-ai07">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://varun-ai07.github.io/">
+    <meta property="twitter:title" content="Varun P - AI Architect & Quantum Computing Researcher">
+    <meta property="twitter:description" content="Building next-generation intelligent systems at the intersection of AI, Quantum Computing, and Blockchain Technology.">
+    
+    <!-- Google Site Verification - ADD YOUR VERIFICATION CODE HERE -->
     <meta name="google-site-verification" content="-YjMtYwwCmzr4PONWyz3oE7IQ9Bpt1jmS-bL_q8m26k" />
     
-    <title>Varun P - AI Architect & Quantum Computing Researcher</title>
+    <title>Varun P - AI Architect & Quantum Computing Researcher | Portfolio</title>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Varun P",
+      "url": "https://varun-ai07.github.io",
+      "sameAs": [
+        "https://github.com/Varun-ai07",
+        "https://linkedin.com/in/jp-varun"
+      ],
+      "jobTitle": "AI Architect & Quantum Computing Researcher",
+      "alumniOf": "Anna University",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chennai",
+        "addressCountry": "IN"
+      },
+      "email": "jp.vxrun@gmail.com",
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Quantum Computing",
+        "Blockchain",
+        "Machine Learning",
+        "Web3",
+        "Cybersecurity"
+      ]
+    }
+    </script>
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -20,107 +66,351 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #544349 0%, #3a2f33 50%, #544349 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
+            color: #F3E7D9;
             padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Animated background elements */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(243, 231, 217, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            top: -250px;
+            left: -250px;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        body::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(243, 231, 217, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            bottom: -200px;
+            right: -200px;
+            animation: float 15s infinite ease-in-out reverse;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            50% {
+                transform: translate(50px, 50px) scale(1.1);
+            }
         }
         
         .container {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 60px 40px;
-            max-width: 800px;
+            background: rgba(243, 231, 217, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 70px 50px;
+            max-width: 1000px;
             text-align: center;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(243, 231, 217, 0.2);
+            border: 2px solid rgba(243, 231, 217, 0.15);
+            animation: fadeIn 1.2s ease-in;
+            position: relative;
+            z-index: 1;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            font-size: 5em;
+            margin-bottom: 15px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            background: linear-gradient(135deg, #F3E7D9 0%, #d4c4b4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 4px 20px rgba(243, 231, 217, 0.3);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 10px rgba(243, 231, 217, 0.3));
+            }
+            to {
+                filter: drop-shadow(0 0 20px rgba(243, 231, 217, 0.5));
+            }
         }
         
         .subtitle {
+            font-family: 'Space Mono', monospace;
             font-size: 1.3em;
-            margin-bottom: 30px;
-            opacity: 0.9;
+            margin-bottom: 40px;
+            color: #d4c4b4;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
         .description {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            opacity: 0.95;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2em;
+            line-height: 2;
+            margin-bottom: 50px;
+            color: #F3E7D9;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
         }
         
         .links {
             display: flex;
-            gap: 20px;
+            gap: 25px;
             justify-content: center;
             flex-wrap: wrap;
+            margin-bottom: 60px;
         }
         
         .btn {
-            padding: 15px 30px;
-            background: white;
-            color: #667eea;
+            padding: 18px 40px;
+            background: linear-gradient(135deg, #F3E7D9 0%, #d4c4b4 100%);
+            color: #544349;
             text-decoration: none;
             border-radius: 50px;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1.1em;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 
+                0 6px 20px rgba(243, 231, 217, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            letter-spacing: 1px;
+            border: 2px solid transparent;
+            font-family: 'Montserrat', sans-serif;
         }
         
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 
+                0 10px 30px rgba(243, 231, 217, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            background: linear-gradient(135deg, #ffffff 0%, #F3E7D9 100%);
+            border-color: rgba(243, 231, 217, 0.5);
         }
         
         .skills {
-            margin-top: 50px;
+            margin-top: 60px;
             display: flex;
-            gap: 15px;
+            gap: 18px;
             justify-content: center;
             flex-wrap: wrap;
         }
         
         .skill-tag {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 10px 20px;
+            background: rgba(243, 231, 217, 0.12);
+            padding: 14px 28px;
             border-radius: 25px;
-            font-size: 0.95em;
+            font-size: 1.05em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: default;
+            border: 1px solid rgba(243, 231, 217, 0.2);
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.5px;
+        }
+        
+        .skill-tag:hover {
+            background: rgba(243, 231, 217, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(243, 231, 217, 0.2);
+            border-color: rgba(243, 231, 217, 0.4);
+        }
+        
+        .highlight {
+            color: #F3E7D9;
+            font-weight: 600;
+            background: linear-gradient(135deg, #F3E7D9 0%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .projects-section {
+            margin-top: 70px;
+            padding-top: 40px;
+            border-top: 2px solid rgba(243, 231, 217, 0.2);
+        }
+        
+        .projects-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #F3E7D9 0%, #d4c4b4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+        }
+        
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .project-card {
+            background: rgba(243, 231, 217, 0.08);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: left;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid rgba(243, 231, 217, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(243, 231, 217, 0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .project-card:hover::before {
+            opacity: 1;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            background: rgba(243, 231, 217, 0.15);
+            box-shadow: 0 12px 35px rgba(243, 231, 217, 0.25);
+            border-color: rgba(243, 231, 217, 0.4);
+        }
+        
+        .project-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6em;
+            margin-bottom: 12px;
+            color: #F3E7D9;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .project-card p {
+            font-size: 1em;
+            line-height: 1.8;
+            color: #d4c4b4;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+        
+        footer {
+            margin-top: 70px;
+            padding-top: 40px;
+            border-top: 2px solid rgba(243, 231, 217, 0.2);
+            font-size: 1em;
+            color: #d4c4b4;
+            font-weight: 300;
+        }
+        
+        footer p {
+            margin: 8px 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em;
+                letter-spacing: 4px;
+            }
+            
+            .subtitle {
+                font-size: 1em;
+                letter-spacing: 1px;
+            }
+            
+            .description {
+                font-size: 1em;
+                line-height: 1.7;
+            }
+            
+            .container {
+                padding: 50px 30px;
+            }
+            
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 320px;
+                justify-content: center;
+            }
+            
+            .projects-title {
+                font-size: 2em;
+            }
+            
+            .project-cards {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🚀 VARUN P</h1>
+        <h1>VARUN P</h1>
         <div class="subtitle">AI Architect | Quantum Computing | Web3 Innovator</div>
         
         <div class="description">
-            Building next-generation intelligent systems at the intersection of 
+            Building <span class="highlight">next-generation intelligent systems</span> at the intersection of 
             <strong>Artificial Intelligence</strong>, <strong>Quantum Computing</strong>, 
             and <strong>Blockchain Technology</strong>.
             <br><br>
-            B.Tech AI & Data Science @ Anna University, Coimbatore
+            B.Tech AI & Data Science @ Anna University, Chennai, India
         </div>
         
         <div class="links">
-            <a href="https://github.com/Varun-ai07" class="btn" target="_blank">
+            <a href="https://github.com/Varun-ai07" class="btn" target="_blank" rel="noopener noreferrer">
                 📂 GitHub Portfolio
             </a>
-            <a href="https://linkedin.com/in/jp-varun" class="btn" target="_blank">
+            <a href="https://linkedin.com/in/jp-varun" class="btn" target="_blank" rel="noopener noreferrer">
                 💼 LinkedIn
             </a>
-            <a href="mailto:jp.vxrun@gmail.com" class="btn" target="_blank">
+            <a href="mailto:jp.vxrun@gmail.com" class="btn">
                 📧 Contact Me
             </a>
         </div>
@@ -132,7 +422,57 @@
             <span class="skill-tag">🤖 Agentic AI</span>
             <span class="skill-tag">🛡️ Cybersecurity</span>
             <span class="skill-tag">⚡ Full Stack</span>
+            <span class="skill-tag">🔬 Research</span>
         </div>
+        
+        <div class="projects-section">
+            <div class="projects-title">🔥 Featured Projects</div>
+            
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>🏥 Medical Consent AI</h3>
+                    <p>AI-explained medical consent platform with blockchain verification. Making healthcare documents understandable.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>⚛️ QuantaBO</h3>
+                    <p>Quantum circuit optimization using Graph Neural Networks and Bayesian optimization techniques.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>🧠 Brain Tumor AI</h3>
+                    <p>Hybrid CNN + Vision Transformer for MRI-based tumor detection with clinical-grade accuracy.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>🛡️ Quasar Security AI</h3>
+                    <p>Multi-agent RAG system for universal cybersecurity documentation and threat intelligence.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>🌤️ WeatherGuard AI</h3>
+                    <p>AI-powered disaster response system with real-time weather monitoring and predictive analytics.</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>🤖 AI Agent Suite</h3>
+                    <p>Collection of voice, telegram, and documentation AI agents powered by LLMs and RAG systems.</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2026 Varun P. Built with 💜 for the future of AI.</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">
+                AI Architect • Quantum Researcher • Web3 Developer • Open Source Contributor
+            </p>
+        </footer>
     </div>
+    
+    <!-- Simple Analytics (Optional - No tracking by default) -->
+    <script>
+        // Add your analytics code here if needed
+        console.log('Welcome to Varun P\'s Portfolio! 🚀');
+    </script>
 </body>
 </html>

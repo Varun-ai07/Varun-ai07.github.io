@@ -12,11 +12,11 @@
 
 ---
 
-## 👨‍💻 The Story So Far
+## <span style="font-size: 1.6em;">👨‍💻 The Story So Far</span>
 
-I'm not just building AI systems—I'm architecting the **next generation of intelligent platforms** that bridge quantum computing, blockchain, and deep learning. Currently pursuing B.Tech in AI & Data Science at Anna University, I've already shipped production-grade systems that are redefining healthcare consent, quantum optimization, and cybersecurity.
+<span style="font-size: 1.1em;">I'm not just building AI systems—I'm architecting the **next generation of intelligent platforms** that bridge quantum computing, blockchain, and deep learning. Currently pursuing B.Tech in AI & Data Science at Anna University, I've already shipped production-grade systems that are redefining healthcare consent, quantum optimization, and cybersecurity.</span>
 
-**What drives me?** The intersection of impossibly hard problems and elegant solutions. Whether it's optimizing quantum circuits with graph neural networks or building AI agents that understand medical documentation, I thrive where innovation meets impact.
+<span style="font-size: 1.1em;">**What drives me?** The intersection of impossibly hard problems and elegant solutions. Whether it's optimizing quantum circuits with graph neural networks or building AI agents that understand medical documentation, I thrive where innovation meets impact.</span>
 
 ---
 

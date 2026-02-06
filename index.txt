@@ -1,0 +1,57 @@
+1:"$Sreact.fragment"
+2:I[9243,["177","static/chunks/app/layout-dc3f8d2062642eda.js"],""]
+4:I[7555,[],""]
+5:I[1295,[],""]
+6:I[894,[],"ClientPageRoot"]
+7:I[3734,["362","static/chunks/30a37ab2-ce1c1726018b2275.js","711","static/chunks/8e1d74a4-c05613c656a3421c.js","981","static/chunks/981-1b2989bb0170403d.js","974","static/chunks/app/page-d1d9e67b65a83359.js"],"default"]
+a:I[9665,[],"OutletBoundary"]
+d:I[4911,[],"AsyncMetadataOutlet"]
+f:I[9665,[],"ViewportBoundary"]
+11:I[9665,[],"MetadataBoundary"]
+13:I[4462,["219","static/chunks/app/global-error-98a021f6fb255ceb.js"],"default"]
+:HL["/_next/static/css/03d637c63440d3ea.css","style"]
+3:T63b,
+              (function() {
+                // 1. FILTER CONSOLE ERRORS (Prevents the '1 Issue' pill from triggering)
+                const _error = console.error;
+                console.error = function(...args) {
+                  const msg = args.join(' ');
+                  if (msg.includes('110504') || msg.includes('SubdivGeometry')) return;
+                  _error.apply(console, args);
+                };
+
+                // 2. AGGRESSIVE UI HIDER
+                const hideTools = () => {
+                  const styleId = 'nuclear-hider-styles';
+                  if (!document.getElementById(styleId)) {
+                    const style = document.createElement('style');
+                    style.id = styleId;
+                    style.innerHTML = `
+                      nextjs-portal, #nextjs-portal, [data-nextjs-toast-wrapper], 
+                      #next-dev-overlay, .next-dev-overlay, [data-nextjs-dialog-overlay] { 
+                        display: none !important; visibility: hidden !important; 
+                        opacity: 0 !important; pointer-events: none !important;
+                        z-index: -99999 !important; height: 0 !important;
+                      }
+                    `;
+                    document.head.appendChild(style);
+                  }
+
+                  ['nextjs-portal', '[data-nextjs-toast-wrapper]', '#nextjs-portal'].forEach(s => {
+                    document.querySelectorAll(s).forEach(el => el.remove());
+                  });
+                };
+
+                setInterval(hideTools, 100);
+              })();
+            0:{"P":null,"b":"m4Z7y9tm0VjnPR0nCYEQh","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/03d637c63440d3ea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Varun P\",\"alternateName\":\"Varun-ai07\",\"url\":\"https://varun-ai07.github.io\",\"sameAs\":[\"https://github.com/Varun-ai07\",\"https://linkedin.com/in/jp-varun\",\"https://x.com/VarunNebula\"],\"jobTitle\":\"AI Architect & Quantum Computing Researcher\",\"alumniOf\":{\"@type\":\"CollegeOrUniversity\",\"name\":\"Anna University\"},\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Coimbatore\",\"addressRegion\":\"Tamil Nadu\",\"addressCountry\":\"IN\"},\"email\":\"jp.vxrun@gmail.com\",\"knowsAbout\":[\"Artificial Intelligence\",\"Quantum Computing\",\"Blockchain\",\"Machine Learning\",\"Web3\",\"Cybersecurity\",\"Agentic AI\",\"Deep Learning\",\"RAG Systems\"]}"}}]}],["$","body",null,{"className":"antialiased","children":[["$","$L2",null,{"id":"orchids-browser-logs","src":"https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js","strategy":"afterInteractive","data-orchids-project-id":"af4c35f8-1446-4f5b-bb80-a08d745daef0"}],["$","$L2",null,{"src":"https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js","strategy":"afterInteractive","data-target-origin":"*","data-message-type":"ROUTE_CHANGE","data-include-search-params":"true","data-only-in-iframe":"true","data-debug":"true","data-custom-data":"{\"appName\": \"YourApp\", \"version\": \"1.0.0\", \"greeting\": \"hi\"}"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$3"}}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L6",null,{"Component":"$7","searchParams":{},"params":{},"promises":["$@8","$@9"]}],null,["$","$La",null,{"children":["$Lb","$Lc",["$","$Ld",null,{"promise":"$@e"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","vXE8tDGsHTo2mrSFx77o7v",{"children":[["$","$Lf",null,{"children":"$L10"}],null]}],["$","$L11",null,{"children":"$L12"}]]}],false]],"m":"$undefined","G":["$13",[]],"s":false,"S":true}
+14:"$Sreact.suspense"
+15:I[4911,[],"AsyncMetadata"]
+8:{}
+9:{}
+12:["$","div",null,{"hidden":true,"children":["$","$14",null,{"fallback":null,"children":["$","$L15",null,{"promise":"$@16"}]}]}]
+c:null
+10:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+b:null
+e:{"metadata":[["$","title","0",{"children":"VARUN P (Varun-ai07) - AI Architect & Quantum Computing Researcher"}],["$","meta","1",{"name":"description","content":"Varun P - AI Architect, Quantum Computing Researcher, and Web3 Developer from Coimbatore, India. Building next-generation intelligent systems with AI, Quantum Computing, and Blockchain. GitHub: Varun-ai07. B.Tech AI & Data Science @ Anna University."}],["$","link","2",{"rel":"author","href":"https://github.com/Varun-ai07"}],["$","meta","3",{"name":"author","content":"Varun P"}],["$","meta","4",{"name":"keywords","content":"Varun P,Varun-ai07,AI Architect,Quantum Computing,Web3,Blockchain,Machine Learning,Deep Learning,Coimbatore,Anna University,Artificial Intelligence,Cybersecurity,Agentic AI"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","meta","6",{"name":"google-site-verification","content":"-YjMtYwwCmzr4PONWyz3oE7IQ9Bpt1jmS-bL_q8m26k"}],["$","meta","7",{"property":"og:title","content":"Varun P - AI Architect & Quantum Computing Researcher"}],["$","meta","8",{"property":"og:description","content":"Building next-generation intelligent systems at the intersection of AI, Quantum Computing, and Blockchain Technology."}],["$","meta","9",{"property":"og:url","content":"https://varun-ai07.github.io"}],["$","meta","10",{"property":"og:site_name","content":"Varun P Portfolio"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:site","content":"@VarunNebula"}],["$","meta","14",{"name":"twitter:creator","content":"@VarunNebula"}],["$","meta","15",{"name":"twitter:title","content":"Varun P - AI Architect & Quantum Computing Researcher"}],["$","meta","16",{"name":"twitter:description","content":"Building next-generation intelligent systems at the intersection of AI, Quantum Computing, and Blockchain Technology."}],["$","link","17",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"2016x2112"}]],"error":null,"digest":"$undefined"}
+16:{"metadata":"$e:metadata","error":null,"digest":"$undefined"}
